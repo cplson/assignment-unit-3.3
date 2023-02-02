@@ -54,8 +54,9 @@ for(changes of supplyChanges){
 }
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
-console.log('8. Total supplies available is:');
-
+let totalParts = 0;
+supplyChanges.forEach(element => totalParts += element);
+console.log('8. Total supplies available is:', totalParts);
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
